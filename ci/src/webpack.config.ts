@@ -125,11 +125,11 @@ module.exports =  {
             filename: 'index.html',
             inject: 'body'
         }),
-        new ExtractTextWebpackPlugin(`css/${effective.fileNames.css}`)
-        // new CopyWebpackPlugin([{
-            // from: `${dirs.getMdlDashboard}/src/images`,
-            // to: 'images'
-        // }])
+        new ExtractTextWebpackPlugin(`css/${effective.fileNames.css}`),
+        new CopyWebpackPlugin([{
+            from: `img`,
+            to: 'img'
+        }])
     ]),
     devServer: effective.devServer
 }

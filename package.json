@@ -16,7 +16,7 @@
     "watch-webpack": "webpack-dev-server --config ./ci/bin/webpack.config.js --port 8400",
     "watch": "yarn run clean && (yarn watch-typescript & yarn watch-webpack)",
     "postinstall": "yarn build-ci && yarn write-db-file",
-    "test": "if [ ! -f ./dist/index.html ]; then echo \"index.html is missing\"; exit 1; fi; if [ ! -d ./dist/js ]; then echo \"dist/js is missing\"; exit 1; fi; if [ ! -d ./dist/css ]; then echo \"dist/css is missing\"; exit 1; fi; if [ ! -d ./dist/images ]; then echo \"dist/images is missing\"; exit 1; fi; find -L dist"
+    "test": "if [ ! -f ./dist/index.html ]; then echo \"index.html is missing\"; exit 1; fi; if [ ! -d ./dist/js ]; then echo \"dist/js is missing\"; exit 1; fi; if [ ! -d ./dist/css ]; then echo \"dist/css is missing\"; exit 1; fi; if [ ! -d ./dist/img ]; then echo \"dist/img is missing\"; exit 1; fi; find -L dist"
   },
   "devDependencies": {
     "@types/colors": "^1.1.3",
