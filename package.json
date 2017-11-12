@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:lencse/futuregram.git",
   "author": "Levente Löki <leventeloki@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo No test specified"
+  }
 }
