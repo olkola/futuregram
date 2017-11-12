@@ -6,6 +6,7 @@
   "author": "Levente Löki <leventeloki@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "echo Build",
     "test": "echo No test specified"
   }
 }
