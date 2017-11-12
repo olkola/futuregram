@@ -5,8 +5,8 @@ const db = require('../../database/db.json')
 export default class Main extends React.Component<{}, {}> {
 
     public render() {
-        const elements = db.map(item => (
-            <div>
+        const elements = db.map((item, idx) => (
+            <div key={ idx }>
                 <p>{ item.hashtag }</p>
                 <p>{ item.description }</p>
                 <p>
