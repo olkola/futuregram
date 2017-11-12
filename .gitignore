@@ -1,0 +1,7 @@
+node_modules
+/ci/bin
+/build
+/dist
+.sass-cache
+/database/db.json
+!/database/.gitkeep
